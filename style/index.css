@@ -1,0 +1,25 @@
+
+.beaudiv {
+    text-align: center;
+}
+
+#cible {
+
+    background-image: url("../img/vise_charogne.png");
+    background-position: center;
+    background-size: cover;
+    height: 200px;
+    width: 200px;
+}
+
+#viandeCount {
+    color: red;
+}
+
+.countP {
+    padding: 0.5em;
+    margin-top: 0.5em;
+    color: #2a0000;
+}
+
+
