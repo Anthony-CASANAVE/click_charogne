@@ -25,75 +25,108 @@
 //}
 
 
-$(function(){
-function setCookie(cname, cvalue, exdays) {
-    var d = new Date();
-    d.setTime(d.getTime() + (exdays24*60*60*1000));
-    var expires = "expires="+ d.toUTCString();
-    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
-}
- function getCookie(cname) {
-    var name = cname + "=";
-    var decodedCookie = decodeURIComponent(document.cookie);
-    var ca = decodedCookie.split(';');
-    for(var i = 0; i <ca.length; i++) {
-        var c = ca[i];
-        while (c.charAt(0) == ' ') {
-            c = c.substring(1);
-        }
-        if (c.indexOf(name) == 0) {
-            return c.substring(name.length, c.length);
-        }
-    }
-    return false;
-}
-if(!getCookie('moneyTotal')){
-    let nbViande=0;
-}
-else{
-    nbViande=getCookie('moneyTotal');
-}
-$('#cible').click(function(){
-    nbViande++;
-    setCookie('moneyTotal',nbViande,7);
-    console.log(getCookie('moneyTotal'));
-});
-    
-    let addMeatButton = document.getElementById("cible");
-
-})
-//cliqueAddMoney
-
-//
-//
-//
-//let meatCount = document.getElementById("cliqueCredits").textContent;
-//
-////Chargement des cookies à l'ouverture de la page.
-//var readMeatCount = readCookie("numberOfCicks");
-//
-//if (readMeatCount != null) {
-//    meatCount = readMeatCount;
+//$(function(){
+//function setCookie(cname, cvalue, exdays) {
+//    var d = new Date();
+//    d.setTime(d.getTime() + (exdays24*60*60*1000));
+//    var expires = "expires="+ d.toUTCString();
+//    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+//}
+// function getCookie(cname) {
+//    var name = cname + "=";
+//    var decodedCookie = decodeURIComponent(document.cookie);
+//    var ca = decodedCookie.split(';');
+//    for(var i = 0; i <ca.length; i++) {
+//        var c = ca[i];
+//        while (c.charAt(0) == ' ') {
+//            c = c.substring(1);
+//        }
+//        if (c.indexOf(name) == 0) {
+//            return c.substring(name.length, c.length);
+//        }
+//    }
+//    return false;
+//}
+//if(!getCookie('moneyTotal')){
+//    let nbViande=0;
 //}
 //else{
-//    meatCount = 0;
-//    createCookie("numberOfClicks", meatCount, 7);
+//    nbViande=getCookie('moneyTotal');
 //}
-//
-//
-//
-////Truc
-//
-//
-//
-//document.getElementById("cliqueCredits").textContent = meatCount;
-//
-//addMeatButton.onclick = function () {
-//    meatCount++;
+//$('#cible').click(function(){
+//    nbViande++;
+//    setCookie('moneyTotal',nbViande,7);
+//    console.log(getCookie('moneyTotal'));
+//});
 //    
-//    createCookie("numberOfClicks", meatCount, 7);
+//    let addMeatButton = document.getElementById("cible");
 //
-//    document.getElementById("cliqueCredits").textContent = meatCount;
-//    console.log(readMeatCount);
+//})
+//cliqueAddMoney
+
+
+
 //
+//let creditCount = document.getElementById("cliqueAddMoney").textContent;
+//
+////Chargement des cookies à l'ouverture de la page.
+//var readCreditCount = getCookie("moneyTotal");
+//
+//if (readMeatCount != null) {
+//    creditCount = readCreditCount;
 //}
+//else{
+//    creditCount = 0;
+//    createCookie("numberOfClicks", creditCount, 7);
+//}
+
+
+
+//Truc
+
+
+
+document.getElementById("cliqueCredits").textContent = creditCount;
+
+addMeatButton.onclick = function () {
+    creditCount++;
+    
+    createCookie("numberOfClicks", creditCount, 7);
+
+    document.getElementById("cliqueCredits").textContent = creditCount;
+    console.log(readCreditCount);
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
