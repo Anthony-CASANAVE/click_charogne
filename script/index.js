@@ -1,7 +1,7 @@
 //viande conteur
 
 let addMeatButton = document.getElementById("cible");
-let meatCount = document.getElementById("viandeCount").textContent;
+let meatCount = document.getElementById("cliqueAddMoney").textContent;
 let meatCountCookie = Cookies.get('meatCount');
 
 
@@ -23,12 +23,12 @@ if (typeof Cookies.get('meatCount') === 'undefined') {
 
 
 
-document.getElementById("viandeCount").textContent = meatCount;
+document.getElementById("cliqueAddMoney").textContent = meatCount;
 
 addMeatButton.onclick = function () {
     meatCount++;
 
-    document.getElementById("viandeCount").textContent = meatCount;
+    document.getElementById("cliqueAddMoney").textContent = meatCount;
     console.log(Cookies.get('meatCount'));
     Cookies.set('meatCount', meatCount);
 
