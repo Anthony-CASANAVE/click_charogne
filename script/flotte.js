@@ -1,18 +1,22 @@
-let chasseX1 = document.getElementById("chasseur");
-let chasseX5 = document.getElementById("chasseurX5");
-let chasseX10 = document.getElementById("chasseurX10");
+$(function () {
 
-let totalChasse = document.getElementById("chasseurNombre");
 
-$(function() {
+    let chasseX1 = document.getElementById("chasseur");
+    let chasseX5 = document.getElementById("chasseurX5");
+    let chasseX10 = document.getElementById("chasseurX10");
     
-    $('#chasseur').onclick(function(event ) {
-        if ($(''))
-        
-    })
-    
-    
-    
-    
-    
+    let disabe
+
+    let totalChasse = document.getElementById("chasseurNombre");
+
+
+
+
+
+ 
+
+
+
+
+
 })

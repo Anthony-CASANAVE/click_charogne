@@ -22,4 +22,8 @@
     color: #2a0000;
 }
 
-
+.disabled {
+    
+opacity: 100%;
+    
+}
