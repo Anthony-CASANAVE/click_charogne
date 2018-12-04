@@ -1,18 +1,37 @@
-let chasseX1 = document.getElementById("chasseur");
-let chasseX5 = document.getElementById("chasseurX5");
-let chasseX10 = document.getElementById("chasseurX10");
+$(function () {
 
-let totalChasse = document.getElementById("chasseurNombre");
 
-$(function() {
-    
-    $('#chasseur').onclick(function(event ) {
-        if ($(''))
+    $("#cible").click(function () {
         
-    })
-    
-    
-    
-    
-    
+//        $('#chasseur').removeClass('disabled');
+//        alert($("#cliqueAddMoney").text());
+        if ($("#cliqueAddMoney").text() >= 5) {
+
+            $("#chasseur").removeClass("disabled");
+
+        };
+    });
+
+
+    //    let chasseX1 = $("#chasseur").click(function () {
+    //
+    //        if ($('#selecteur').val() == 0) {
+    //
+    //        }
+    //
+    //    });
+    //
+    //    let chasseX5 = $("#chasseurX5").click();
+    //    let chasseX10 = $("#chasseurX10").click();
+    //
+    //    let totalChasse = $("#chasseurNombre").val();
+
+
+
+
+
+
+
+
+
 })
