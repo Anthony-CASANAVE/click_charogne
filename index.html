@@ -12,9 +12,11 @@
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
-    <!--     __________Bootstrap____________-->
+    <!--     __________Bootstrap -> Jquery____________-->
 
-    <!--     __________Cookies____________-->
+    <script src="script/jquery-3.3.1.js"></script>
+
+    <!--    __________Jquery -> Cookies____________-->
 
     <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
 
@@ -24,7 +26,7 @@
     <link href="style/index.css" type="text/css" rel="stylesheet">
 
     <title></title>
-
+    
 </head>
 
 <body>
@@ -41,7 +43,7 @@
 
         </div>
 
-        <button type="button" class="btn" ID="cible"></button>
+        <button type="button" class="btn" id="cible"></button>
 
 
         <p class="countP">Vous zavez <span id="cliqueAddMoney" class="error">Error</span> p'tits bouts d'charogne plus ou moins commestibles !</p>
@@ -62,7 +64,7 @@
 
                     <span>Chasseur : </span>
                     
-                    <input type="button" class="btn ship " id="chasseur" value="x1" disabled>
+                    <input type="button" class="btn ship disabled" id="chasseur" value="x1" >
 
                     <input type="button" class="btn ship" id="chasseurX5" value="x5">
 
