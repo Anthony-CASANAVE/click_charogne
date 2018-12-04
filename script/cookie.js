@@ -1,8 +1,8 @@
-let addCreditButton = document.getElementById("cible");
+let addCreditButton = $("#cible");
 let creditCount = 0;
-let cliqueCredits = document.getElementById("cliqueCredits");
+let cliqueCredits = $("#cliqueCredits");
 cliqueCredits = 0;
-document.getElementById("cliqueAddMoney").textContent = 0;
+$("#cliqueAddMoney").val = 0;
 
 //Gestion automatique des cookies.
 function createCookie(name, value, days) {
@@ -66,7 +66,7 @@ $(function () {
         setCookie('moneyTotal', creditCount, 7);
         
         console.log(getCookie('moneyTotal'));
-         document.getElementById("cliqueAddMoney").textContent = creditCount;
+         $("#cliqueAddMoney").text(creditCount);
     });
 
 })
@@ -78,8 +78,8 @@ $(function () {
 var readCreditCount = readCookie("moneyTotal");
 
 if (readCreditCount != null) {
-    document.getElementById("cliqueAddMoney").textContent = readCreditCount;
+    $("#cliqueAddMoney").text(readCreditCount);
 } else {
-    document.getElementById("cliqueAddMoney").textContent = 0;
+    $("#cliqueAddMoney").text(0);
     createCookie("numberOfClicks", creditCount, 7);
 }
