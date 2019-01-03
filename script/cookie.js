@@ -7,7 +7,7 @@ $(function () {
     let creditCount = 0;
     let cliqueCredits = $("#cliqueCredits");
     cliqueCredits = 0;
-    $("#cliqueAddMoney").val(0);
+    $("#cliqueAddMoney").text(0);
 
     //Gestion automatique des cookies.
     function createCookie(name, value, days) {
